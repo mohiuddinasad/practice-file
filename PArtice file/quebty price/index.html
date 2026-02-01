@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Product Price</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Product 1 -->
+  <div class="product" data-price="17.28">
+    <h3>Vegetables</h3>
+    <p>Old Price: <del>$48.00</del></p>
+    <p>Current Price: <span class="price">$17.28</span></p>
+
+    <div class="quantity">
+      <button class="minus">-</button>
+      <input type="number" value="1" min="1" readonly>
+      <button class="plus">+</button>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product" data-price="25.50">
+    <h3>Fruits</h3>
+    <p>Old Price: <del>$60.00</del></p>
+    <p>Current Price: <span class="price">$25.50</span></p>
+
+    <div class="quantity">
+      <button class="minus">-</button>
+      <input type="number" value="1" min="1" readonly>
+      <button class="plus">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

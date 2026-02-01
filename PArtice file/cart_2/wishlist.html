@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Wishlist</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">MyShop</div>
+    <div class="header-icons">
+      <div class="icon" id="wishlist-icon-top-3">
+        <a href="wishlist.html" class="link-no-style">💖</a>
+        <span class="badge" id="wishlist-count-3">0</span>
+      </div>
+
+      <div class="icon" id="cart-icon-top-3" onclick="toggleCart()">
+        🛒
+        <span class="badge" id="cart-count-3">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container wishlist-page">
+    <h1>My Wishlist</h1>
+
+    <table class="wishlist-table">
+      <thead>
+        <tr><th>Product</th><th>Price</th><th>Action</th></tr>
+      </thead>
+      <tbody id="wishlist-body">
+        <!-- filled by JS -->
+      </tbody>
+    </table>
+
+    <div style="margin-top:20px">
+      <a href="index.html" class="btn btn-light">Return to shop</a>
+    </div>
+  </main>
+
+  <!-- cart sidebar for convenience -->
+  <aside id="cart-bar" class="cart-bar" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Shopping Cart <small id="cart-items-count-text-3"></small></h3>
+      <button class="close-sidebar" onclick="toggleCart()">✖</button>
+    </div>
+
+    <ul id="cart-items-list-3" class="cart-items-list">
+      <!-- items populated by JS -->
+    </ul>
+
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span id="cart-summary-count-3">0 Items</span>
+        <span id="cart-summary-total-3">$0.00</span>
+      </div>
+      <a href="cart.html" class="btn btn-checkout">Go To Cart</a>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

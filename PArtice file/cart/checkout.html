@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h2>MyShop</h2>
+    <div class="cart-icon">
+      🛒 <span id="cartCountDesktop">0</span> | <span id="cartSubtotalNav">$0.00</span>
+    </div>
+  </nav>
+
+  <h2>Checkout</h2>
+
+  <div class="checkout">
+    <form class="billing">
+      <h3>Billing Information</h3>
+      <input type="text" placeholder="First name">
+      <input type="text" placeholder="Last name">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Street Address">
+      <input type="text" placeholder="Country">
+      <input type="text" placeholder="Phone">
+    </form>
+
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <ul id="orderItems"></ul>
+      <p>Subtotal: <span id="checkoutSubtotal">$0.00</span></p>
+      <p>Shipping: Free</p>
+      <p>Total: <span id="checkoutTotal">$0.00</span></p>
+
+      <h4>Payment Method</h4>
+      <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+      <label><input type="radio" name="payment" value="paypal"> Paypal</label>
+      <label><input type="radio" name="payment" value="amazon"> Amazon Pay</label>
+
+      <button id="placeOrderBtn">Place Order</button>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

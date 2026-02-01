@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>My Cart</h2>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="wishlist.html">💖 Wishlist (<span id="wishlistCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h3>Cart Items</h3>
+    <table>
+      <thead>
+        <tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th><th></th></tr>
+      </thead>
+      <tbody id="cartTableBody"></tbody>
+    </table>
+    <h4>Subtotal: $<span id="cartSubtotal">0.00</span></h4>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

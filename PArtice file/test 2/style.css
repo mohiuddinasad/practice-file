@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+}
+
+.contact-info {
+  width: 40%;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contact-info p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-info .box {
+  margin: 20px 0;
+}
+
+.contact-info .box h4 {
+  margin: 5px 0;
+}
+
+.contact-form {
+  width: 55%;
+  background: #f0f8ff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical; /* শুধু vertically resize হবে */
+  min-height: 120px; /* এর নিচে ছোট হবে না */
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* Floating Messages */
+.floating-message {
+  position: fixed;
+  top: 20px;
+  right: -300px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: right 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.floating-message.show {
+  right: 20px;
+}
+
+.success {
+  background: #28a745;
+  color: white;
+}
+
+.error {
+  background: #dc3545;
+  color: white;
+}

@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: #fff;
+  width: 180px;
+  text-align: center;
+}
+
+button {
+  margin-top: 5px;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-to-cart {
+  background: green;
+  color: white;
+}
+
+.add-to-wishlist {
+  background: #e91e63;
+  color: white;
+}
+
+.wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.wishlist-table th,
+.wishlist-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.stock-in {
+  color: green;
+  font-weight: bold;
+}
+
+.stock-out {
+  color: red;
+  font-weight: bold;
+}
+
+.btn-green {
+  background: green;
+  color: white;
+}
+
+.btn-disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+}

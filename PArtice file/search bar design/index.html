@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 50px;
+    }
+    .stats-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      background-color: #f1f3f6;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .stats-left {
+      max-width: 40%;
+    }
+    .stats-left h2 {
+      font-size: 28px;
+      color: #333;
+    }
+    .stats-left h2 span {
+      color: #28a745; /* green */
+    }
+    .stats-left p {
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .stats-right {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .stat-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .stat-icon {
+      font-size: 30px;
+      color: #28a745;
+    }
+
+    .stat-info {
+      font-weight: bold;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+
+  <!-- Optional: Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div class="stats-section">
+    <div class="stats-left">
+      <h2>Helping a local <br><span>business reinvent itself</span></h2>
+      <p>We reached here with our hard work and dedication</p>
+    </div>
+    <div class="stats-right">
+      <div class="stat-box">
+        <i class="fas fa-users stat-icon"></i>
+        <div>
+          <div class="stat-info">2,245,341</div>
+          <div class="stat-label">Members</div>
+        </div>
+      </div>
+      <div class="stat-box">
+        <i class="fas fa-network-wired stat-icon"></i>
+        <div>
+          <div class="stat-info">46,328</div>
+          <div class="stat-label">Clubs</div>
+        </div>
+      </div>
+      <div class="stat-box">
+        <i class="fas fa-calendar-check stat-icon"></i>
+        <div>
+          <div class="stat-info">828,867</div>
+          <div class="stat-label">Event Bookings</div>
+        </div>
+      </div>
+      <div class="stat-box">
+        <i class="fas fa-credit-card stat-icon"></i>
+        <div>
+          <div class="stat-info">1,926,436</div>
+          <div class="stat-label">Payments</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

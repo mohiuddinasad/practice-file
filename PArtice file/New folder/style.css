@@ -1,0 +1,149 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background-color: #f3e8ff;
+  /* light purple */
+  color: #7c3aed;
+  /* purple */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .icon {
+  background-color: #7c3aed;
+  /* dark purple */
+  color: white;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+
+.icon {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.icon.google:hover {
+  color: #4285F4;
+  /* Google Blue */
+}
+
+.icon.dribbble:hover {
+  color: #EA4C89;
+  /* Dribbble Pink */
+}
+
+
+/* input  */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-container p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  /* margin-bottom: 6px; */
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:hover {
+  border-color: #7b3eff;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.submit-btn {
+  background-color: #7b3eff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #5e2ce0;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}

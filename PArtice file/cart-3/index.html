@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>My Shop</h2>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Products -->
+    <div class="products">
+        <div class="product">
+            <h3>Fresh Indian Orange</h3>
+            <p>$12.00</p>
+            <button onclick="addToCart(1, 'Fresh Indian Orange', 12)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Green Apple</h3>
+            <p>$14.00</p>
+            <button onclick="addToCart(2, 'Green Apple', 14)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Green Apple</h3>
+            <p>$14.00</p>
+            <button onclick="addToCart(3, 'Green Apple', 14)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-btn" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <span id="cart-summary"></span>
+            <span id="cart-total"></span>
+        </div>
+        <a href="cart.html" class="checkout-btn">Go To Cart</a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

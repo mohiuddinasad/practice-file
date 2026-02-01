@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop - Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>My Shop</h2>
+    <nav>
+      <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+      <a href="wishlist.html">💖 Wishlist (<span id="wishlistCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h3>Products</h3>
+    <div class="product-list">
+      <div class="product" 
+           data-id="1" data-name="Green Capsicum" data-price="14.99" data-stock="true" data-img="https://via.placeholder.com/60">
+        <img src="https://via.placeholder.com/100" alt="">
+        <h4>Green Capsicum</h4>
+        <p>$14.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist">Add to Wishlist</button>
+      </div>
+
+      <div class="product" 
+           data-id="2" data-name="Chinese Cabbage" data-price="45" data-stock="true" data-img="https://via.placeholder.com/60">
+        <img src="https://via.placeholder.com/100" alt="">
+        <h4>Chinese Cabbage</h4>
+        <p>$45.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist">Add to Wishlist</button>
+      </div>
+
+      <div class="product" 
+           data-id="3" data-name="Fresh Sujipuri Mango" data-price="9" data-stock="false" data-img="https://via.placeholder.com/60">
+        <img src="https://via.placeholder.com/100" alt="">
+        <h4>Fresh Sujipuri Mango</h4>
+        <p>$9.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist">Add to Wishlist</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

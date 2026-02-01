@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>MyShop</h2>
+    <div class="cart-icon">
+      🛒 <span id="cartCountDesktop">0</span> | <span id="cartSubtotalNav">$0.00</span>
+    </div>
+  </nav>
+
+  <h2>My Shopping Cart</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="cartTableBody"></tbody>
+  </table>
+
+  <div class="cart-summary">
+    <p>Subtotal: <span id="summarySubtotal">$0.00</span></p>
+    <p>Total: <span id="summaryTotal">$0.00</span></p>
+    <button id="updateCartBtn">Update Cart</button>
+    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

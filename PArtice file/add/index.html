@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Newsletter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>My Website Content</h1>
+  <p>Scroll down to see more content. Popup will appear after 3 seconds.</p>
+  <p style="margin-top:1000px;">Bottom of the page content.</p>
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup">
+      <div class="popup-img">
+        <img src="https://i.ibb.co/YTT6M8N/newsletter.jpg" alt="Newsletter">
+      </div>
+      <div class="popup-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Subscribe to our newsletter and Save your <b>20% money</b> with discount code today.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+
+        <!-- Checkbox -->
+        <div class="checkbox-container">
+          <input type="checkbox" id="dontShow">
+          <label for="dontShow">Do not show this window</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

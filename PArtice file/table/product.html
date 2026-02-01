@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Product Details</h1>
+    <div id="product-details" class="card shadow p-4"></div>
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-secondary">🔙 Back to Products</a>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script>
+    // URL থেকে প্রোডাক্ট আইডি নেয়া
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    // ডেটা খুঁজে বের করা
+    const product = products[productId];
+    const container = document.getElementById("product-details");
+
+    if (product) {
+      container.innerHTML = `
+        <h2>${product.name}</h2>
+        <p><strong>Price:</strong> ${product.price}</p>
+        <p>${product.description}</p>
+      `;
+    } else {
+      container.innerHTML = "<p class='text-danger'>❌ Product not found!</p>";
+    }
+  </script>
+</body>
+</html>
